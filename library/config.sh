@@ -82,8 +82,8 @@ BASE_LDFLAGS="-pipe -fno-ident"
 
 PROCESSOR_OPTIMIZATION_TUNE_32='generic'
 PROCESSOR_OPTIMIZATION_ARCH_32='i686'
-PROCESSOR_OPTIMIZATION_TUNE_64='core2'
-PROCESSOR_OPTIMIZATION_ARCH_64='nocona'
+PROCESSOR_OPTIMIZATION_TUNE_64='generic'
+PROCESSOR_OPTIMIZATION_ARCH_64='x86-64'
 
 # **************************************************************************
 
