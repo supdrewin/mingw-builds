@@ -27,32 +27,32 @@ MARKER1=mingw-$VERNUM-x86_64-posix-sjlj.flag
 
 MARKER2=mingw-$VERNUM-x86_64-posix-seh.flag
 [[ ! -e $MARKER4 ]] && {
-	./build --mode=$GCC_NAME --buildroot=$BUILDROOT $@ --threads=posix --exceptions=seh --rev=0 --arch=x86_64 --bin-compress && touch $MARKER4 || exit 1
+	./build --mode=$GCC_NAME --buildroot=$BUILDROOT $@ --threads=posix --exceptions=seh --rev=0 --arch=x86_64 --bin-compress && touch $MARKER2 || exit 1
 }
 
 MARKER3=mingw-$VERNUM-x86_64-win32-sjlj.flag
 [[ ! -e $MARKER6 ]] && {
-	./build --mode=$GCC_NAME --buildroot=$BUILDROOT $@ --threads=win32 --exceptions=sjlj --rev=0 --arch=x86_64 --bin-compress && touch $MARKER6 || exit 1
+	./build --mode=$GCC_NAME --buildroot=$BUILDROOT $@ --threads=win32 --exceptions=sjlj --rev=0 --arch=x86_64 --bin-compress && touch $MARKER3 || exit 1
 }
 
 MARKER4=mingw-$VERNUM-x86_64-win32-seh.flag
 [[ ! -e $MARKER7 ]] && {
-	./build --mode=$GCC_NAME --buildroot=$BUILDROOT $@ --threads=win32 --exceptions=seh --rev=0 --arch=x86_64 --bin-compress && touch $MARKER7 || exit 1
+	./build --mode=$GCC_NAME --buildroot=$BUILDROOT $@ --threads=win32 --exceptions=seh --rev=0 --arch=x86_64 --bin-compress && touch $MARKER4 || exit 1
 }
 
 MARKER5=mingw-$VERNUM-i686-posix-sjlj.flag
 [[ ! -e $MARKER2 ]] && {
-	./build --mode=$GCC_NAME --buildroot=$BUILDROOT $@ --threads=posix --exceptions=sjlj --rev=0 --arch=i686 --bin-compress && touch $MARKER2 || exit 1
+	./build --mode=$GCC_NAME --buildroot=$BUILDROOT $@ --threads=posix --exceptions=sjlj --rev=0 --arch=i686 --bin-compress && touch $MARKER5 || exit 1
 }
 
 MARKER6=mingw-$VERNUM-i686-posix-dwarf.flag
 [[ ! -e $MARKER3 ]] && {
-	./build --mode=$GCC_NAME --buildroot=$BUILDROOT $@ --threads=posix --exceptions=dwarf --rev=0 --arch=i686 --bin-compress && touch $MARKER3 || exit 1
+	./build --mode=$GCC_NAME --buildroot=$BUILDROOT $@ --threads=posix --exceptions=dwarf --rev=0 --arch=i686 --bin-compress && touch $MARKER6 || exit 1
 }
 
 MARKER7=mingw-$VERNUM-i686-win32-sjlj.flag
 [[ ! -e $MARKER5 ]] && {
-	./build --mode=$GCC_NAME --buildroot=$BUILDROOT $@ --threads=win32 --exceptions=sjlj --rev=0 --arch=i686 --bin-compress && touch $MARKER5 || exit 1
+	./build --mode=$GCC_NAME --buildroot=$BUILDROOT $@ --threads=win32 --exceptions=sjlj --rev=0 --arch=i686 --bin-compress && touch $MARKER7 || exit 1
 }
 
 MARKER8=mingw-$VERNUM-i686-win32-dwarf.flag
