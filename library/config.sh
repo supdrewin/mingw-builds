@@ -134,7 +134,7 @@ BUILD_EXTRAS=yes
 GCC_NAME=
 SHORT_OUTPUT=no
 
-DEFAULT_PYTHON_VERSION=3
+DEFAULT_PYTHON_VERSION=2
 
 # **************************************************************************
 
